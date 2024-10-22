@@ -9,7 +9,11 @@ This project involves hosting a static website on AWS using the Management Conso
 - **CI/CD Tools**: AWS CodePipeline.
 
 ## Architecture Diagram
-![Architecture Diagram](link-to-your-diagram)
+
+<p align="center">
+  <img src="https://github.com/pavan-3000/10-Weeks-of-Cloudops/blob/main/Static%20Website%20Hosting%20on%20AWS%20with%20CICD/Images/Architecture%20Diagram.jpg"/>
+<p align="center">
+  
 
 ## Step-by-Step Guide
 ### 1. Setting Up the S3 Bucket
@@ -18,8 +22,13 @@ This project involves hosting a static website on AWS using the Management Conso
 - Enter a unique bucket name and select your desired region.
 - Enable **Block all public access** settings, and create the bucket.
 - Upload your static website files to the bucket.
+  
+<img src="https://github.com/pavan-3000/10-Weeks-of-Cloudops/blob/main/Static%20Website%20Hosting%20on%20AWS%20with%20CICD/Images/S3%20Buckets.png"/>
 
-![S3 Bucket Setup Screenshot](link-to-screenshot)
+
+## Files in S3 Bucket
+ <img src="https://github.com/pavan-3000/10-Weeks-of-Cloudops/blob/main/Static%20Website%20Hosting%20on%20AWS%20with%20CICD/Images/S3%20Files.png"/>
+
 
 ### 2. Setting Up CloudFront
 - Navigate to **CloudFront** in the AWS Management Console.
@@ -28,20 +37,20 @@ This project involves hosting a static website on AWS using the Management Conso
 - Configure the remaining settings as needed, including enabling caching and setting TTL (Time to Live) values.
 - Click on **Create Distribution** to complete the setup.
 
-### 3. Configuring Route 53
-- Go to **Route 53** in the AWS Management Console.
-- Create a **Hosted Zone** for your domain if you haven't already.
-- Set up **A records** pointing to your CloudFront distribution:
-  - Select **Alias** as **Yes**.
-  - Choose your CloudFront distribution from the list.
+<img src="https://github.com/pavan-3000/10-Weeks-of-Cloudops/blob/main/Static%20Website%20Hosting%20on%20AWS%20with%20CICD/Images/CloudeFront.png"/>
 
-### 4. Implementing CI/CD with AWS CodePipeline
+### 3. Implementing CI/CD with AWS CodePipeline
 - Navigate to **CodePipeline** and click on **Create pipeline**.
 - Configure the pipeline settings:
   - Choose a **source provider** (e.g., GitHub) and authenticate it.
   - Set up the **build stage** (if applicable), using AWS CodeBuild or another service.
   - For the **deploy stage**, select your S3 bucket to automate deployment on code changes.
 - Save and create the pipeline to enable automatic deployments.
+
+  <img src="https://github.com/pavan-3000/10-Weeks-of-Cloudops/blob/main/Static%20Website%20Hosting%20on%20AWS%20with%20CICD/Images/Aws%20CodePipeline.png"/>
+
+### After Updating Code
+  <img src="https://github.com/pavan-3000/10-Weeks-of-Cloudops/blob/main/Static%20Website%20Hosting%20on%20AWS%20with%20CICD/Images/Pipeline%20after%20code%20update.png"/>
 
 
 
