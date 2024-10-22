@@ -33,6 +33,6 @@ Feel free to connect with me to discuss ideas, share feedback, or collaborate on
 
 ---
 
-**Connect with me on LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-**Follow my GitHub for updates:** [Your GitHub](https://github.com/yourusername)
+**Connect with me on LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/pavan-s-73915b202/)
+**Follow my GitHub for updates:** [Your GitHub](https://github.com/pavan-3000)
 
